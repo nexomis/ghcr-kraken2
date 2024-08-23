@@ -9,5 +9,5 @@ LABEL org.opencontainers.image.licenses="MIT"
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-  && apt install -y --no-install-recommends ca-certificates kraken2=2.1.3-1 rename \
+  && apt install -y --no-install-recommends ca-certificates kraken2=2.1.3-1 rename tar gzip \
   && rm -rf /var/lib/apt/lists/*
